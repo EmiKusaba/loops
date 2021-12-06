@@ -9,12 +9,38 @@ do {
 console.log(result);
 
 
-let data = {
+let data = [{
   firstName: "Jane",
   lastName: "Doe",
   birthDate: "Jan 5, 1925",
   gender: "female"
+},
+{
+  firstName: "Emi",
+  lastName: "Kusaba",
+  birthDate: "June 15, 1986",
+  gender: "female"
+},
+{
+  firstName: "Louis",
+  lastName: "Khon",
+  birthDate: "Sep 15, 2020",
+  gender: "male"
+},
+{
+  firstName: "Edward",
+  lastName: "Khon",
+  birthDate: "Sep 20, 1988",
+  gender: "male"
+},
+{
+  firstName: "Argo",
+  lastName: "Khon",
+  birthDate: "Aug 14, 2018",
+  gender: "male"
 }
+]
+
 //Use a for...in loop and if statement to console.log the value associated with the key birthDate if the birth year is an odd number.
 let oddNumBd = () => {
   for (let key in data) {
@@ -28,3 +54,7 @@ let oddNumBd = () => {
     }
   }
 }
+//Create an arrayOfPersons that contains multiple objects. You can simply copy/paste the person object you made above multiple times. Feel free to change the values to reflect multiple people you might have in your database.
+//Use .map() to map over the arrayOfPersons and console.log() their information.
+//Use .filter() to filter the persons array and console.log only males in the array.
+//Use .filter() to filter the persons array and console.log only people that were born before Jan 1, 1990.
