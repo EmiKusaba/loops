@@ -72,10 +72,10 @@ const males = data.filter((x) => {
 console.log(males);
 //Use .filter() to filter the persons array and console.log only people that were born before Jan 1, 1990.
 
-const millennium = data.filter((x) => {
+const millennials = data.filter((x) => {
   const birthDate = x["birthDate"];
   var birthYear = parseInt(birthDate.split(",")[1]);
   return  birthYear < 1990;
 
 })
-console.log(millennium);
+console.log(millennials);
