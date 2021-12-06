@@ -56,5 +56,18 @@ let oddNumBd = () => {
 }
 //Create an arrayOfPersons that contains multiple objects. You can simply copy/paste the person object you made above multiple times. Feel free to change the values to reflect multiple people you might have in your database.
 //Use .map() to map over the arrayOfPersons and console.log() their information.
+
+names = data.map((x) => {
+  const fullName = `${x.firstName} ${x.lastName}`
+  return fullName
+})
+
+console.log(names)
+
 //Use .filter() to filter the persons array and console.log only males in the array.
+
+const males = data.filter((x) => {
+  return x['gender'] === "male"
+})
+console.log(males);
 //Use .filter() to filter the persons array and console.log only people that were born before Jan 1, 1990.
